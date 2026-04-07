@@ -3,48 +3,31 @@ import "./Sidebar.css";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      {/* PROFILE */}
-      <div className="profile-card">
+      {/* LOGO / TITLE */}
+      <div className="sidebar__logo">
+        <h2>FindFriends</h2>
+      </div>
+
+      {/* PROFILE MINI */}
+      <div className="sidebar__profile">
         <img
           src="/profile.jpg"
           alt="profile"
-          className="profile-card__image"
+          className="sidebar__avatar"
         />
-        <h3 className="profile-card__name">Elviz Dizzouza</h3>
-        <p className="profile-card__username">@elvizoodem</p>
-        <p className="profile-card__bio">
-          UI/UX Designer. Open to new projects.
-        </p>
-        <button className="profile-card__button">My Profile</button>
-      </div>
-
-      {/* SKILLS */}
-      <div className="skills">
-        <h4 className="skills__title">Skills</h4>
-        <div className="skills__list">
-          <span className="skills__item">UX Designer</span>
-          <span className="skills__item">Frontend</span>
-          <span className="skills__item">JS</span>
+        <div>
+          <p className="sidebar__name">Elviz</p>
+          <span className="sidebar__username">@elviz</span>
         </div>
       </div>
 
-      {/* COMMUNITIES */}
-      <div className="communities">
-        <h4 className="communities__title">Communities</h4>
-
-        <div className="community-item">
-          <img src="/c1.jpg" className="community-item__image" />
-          <div className="community-item__info">
-            UX Designers
-          </div>
-        </div>
-
-        <div className="community-item">
-          <img src="/c2.jpg" className="community-item__image" />
-          <div className="community-item__info">
-            Frontend Devs
-          </div>
-        </div>
+      {/* MENU */}
+      <div className="sidebar__menu">
+        <div className="sidebar__item active">🏠 Dashboard</div>
+        <div className="sidebar__item">❤️ Favorites</div>
+        <div className="sidebar__item">📝 Your Posts</div>
+        <div className="sidebar__item">👥 Communities</div>
+        <div className="sidebar__item">⚙️ Settings</div>
       </div>
     </div>
   );

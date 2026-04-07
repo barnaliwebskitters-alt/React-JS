@@ -1,14 +1,26 @@
+import "./Activity.css";
+
 const Activity = () => {
-  const users = ["Michel", "Cristano", "Brahim", "John Wick"];
+  const users = [
+    "Michel",
+    "Cristano",
+    "Brahim",
+    "John Wick",
+    "Abhilash",
+  ];
 
   return (
     <div className="activity">
-      <h3>Recent Activity</h3>
+      <h3 className="activity__title">Recent Activity</h3>
 
       {users.map((user, index) => (
-        <div key={index} className="activity-item">
-          <p>{user} followed you</p>
-          <button>Follow Back</button>
+        <div className="activity__item" key={index}>
+          <p className="activity__text">
+            {user} followed you
+          </p>
+          <button className="activity__button">
+            Follow Back
+          </button>
         </div>
       ))}
     </div>

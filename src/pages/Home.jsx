@@ -1,13 +1,12 @@
-
-import Post from "../components/Post/Post";
 import StoryBar from "../components/StoryBar/StoryBar";
+import Post from "../components/Post/Post";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <StoryBar />
       <Post />
-    </div>
+    </>
   );
 };
 

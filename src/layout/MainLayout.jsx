@@ -1,7 +1,6 @@
-
+import Sidebar from "../components/Sidebar/Sidebar";
 import Header from "../components/Header/Header";
 import Activity from "../components/Activity/Activity";
-import Sidebar from "../components/Sidebar/Sidebar";
 
 const MainLayout = ({ children }) => {
   return (

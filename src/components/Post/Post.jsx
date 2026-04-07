@@ -1,26 +1,35 @@
+import './Post.css';
+
 const Post = () => {
   return (
     <div className="post">
-      <div className="post-header">
-        <img src="/user.jpg" alt="" />
+      <div className="post__header">
+        <img src="/user.jpg" className="post__avatar" />
         <div>
-          <h4>George Jose</h4>
-          <span>1 hour ago</span>
+          <h4 className="post__user">George Jose</h4>
+          <span className="post__time">1 hour ago</span>
         </div>
       </div>
 
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <p className="post__text">
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
 
-      <img src="/post.jpg" alt="post" />
+      <img src="/post.jpg" className="post__image" />
 
-      <div className="post-actions">
-        <span>❤️</span>
-        <span>💬</span>
-        <span>📤</span>
-        <button>Save</button>
+      <div className="post__actions">
+        <div className="post__icons">
+          <span>❤️</span>
+          <span>💬</span>
+          <span>📤</span>
+        </div>
+        <button className="post__save-btn">Save</button>
       </div>
 
-      <input placeholder="Write your comment..." />
+      <input
+        className="post__comment"
+        placeholder="Write your comment..."
+      />
     </div>
   );
 };
