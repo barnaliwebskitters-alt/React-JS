@@ -1,3 +1,4 @@
+import Icons from "../../themes/Icon";
 import "./Sidebar.css";
 
 const Sidebar = () => {
@@ -11,7 +12,7 @@ const Sidebar = () => {
       {/* PROFILE MINI */}
       <div className="sidebar__profile">
         <img
-          src="/profile.jpg"
+          src={Icons.profileIcon}
           alt="profile"
           className="sidebar__avatar"
         />

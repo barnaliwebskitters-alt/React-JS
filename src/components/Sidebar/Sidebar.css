@@ -1,6 +1,6 @@
 .sidebar {
   width: 20%;
-  background: #111;
+  background: var(--darkBlack);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
 .sidebar__logo {
   font-size: 20px;
   font-weight: bold;
-  color: yellow;
+  color: var(--themeYellow);
 }
 
 /* PROFILE */
@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #1c1c1c;
+  background: var(--lightBlack);
   padding: 10px;
   border-radius: 10px;
 }
@@ -28,6 +28,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  filter: brightness(0) invert(1);
 }
 
 .sidebar__name {
@@ -59,7 +60,7 @@
 }
 
 .sidebar__item.active {
-  background: yellow;
-  color: black;
+  background: var(--themeYellow);
+  color: var(--lightBlack);
   font-weight: 600;
 }

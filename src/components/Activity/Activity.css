@@ -1,7 +1,7 @@
 .activity {
   width: 25%;
   padding: 20px;
-  background: #111;
+  background: var(--darkBlack);
 }
 
 .activity__title {
@@ -9,7 +9,7 @@
 }
 
 .activity__item {
-  background: #1c1c1c;
+  background: var(--lightBlack);
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -21,7 +21,7 @@
 }
 
 .activity__button {
-  background: yellow;
+  background: var(--themeYellow);
   border: none;
   padding: 5px 10px;
   border-radius: 6px;

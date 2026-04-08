@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0f0f0f;
+  /* background-color: #0f0f0f; */
   color: white;
 }
 
@@ -13,7 +13,7 @@ body {
 .sidebar {
   width: 25%;
   padding: 20px;
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
 }
 
 .main-content {
@@ -24,5 +24,5 @@ body {
 .activity {
   width: 25%;
   padding: 20px;
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
 }
