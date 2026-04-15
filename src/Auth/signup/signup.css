@@ -1,0 +1,40 @@
+/* FULL SCREEN CENTER */
+.login_container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkBlack);
+  /* border: 1px solid var(--themeYellow); */
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+.signup_box {
+  width: 350px;
+  height: 495px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.signup_button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background: var(--themeYellow);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup_link {
+  color: #4da6ff;
+  cursor: pointer;
+}
+
+.signup_text {
+  color: #aaa;
+}

@@ -1,12 +1,13 @@
-import "./index.css";
-import MainLayout from "./layout/MainLayout";
-import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AuthMain from "./Auth/authMain/AuthMain";
 
 function App() {
   return (
-    <MainLayout>
-      <Home />
-    </MainLayout>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AuthMain />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
