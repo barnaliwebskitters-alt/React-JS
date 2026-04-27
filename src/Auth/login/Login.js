@@ -3,11 +3,19 @@ import "./login.css";
 import { useState } from "react";
 import InputText from "../../components/InputText/InputText";
 import Images from "../../themes/Images";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Login({ setIsSignup, showForgotModal, setShowForgotModal }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+
+
+    const navigate = useNavigate();
+
+    const goHome = () => {
+        navigate("/home");
+    };
 
     return (
 
@@ -26,7 +34,7 @@ export default function Login({ setIsSignup, showForgotModal, setShowForgotModal
                         onClick={() => setShowForgotModal(true)}
                         className="forgot_password">Forgot Password?</span>
                 </div>
-                <button className="login_button" >Login</button>
+                <button className="login_button" onClick={goHome} >Login</button>
                 <div>
                     <span className="signup_text">Don't have an account? </span>
                     <span
