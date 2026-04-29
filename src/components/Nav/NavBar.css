@@ -1,0 +1,37 @@
+.custom-navbar {
+  height: 100px;              /* FIXED NAVBAR HEIGHT */
+  display: flex;
+  align-items: center;
+}
+
+/* Logo control */
+.navbar-brand img {
+  height: 100px;              /* adjust as you want */
+  width: auto;               /* maintain ratio */
+  object-fit: contain;
+}
+
+
+/* Drawer background */
+.custom-drawer {
+  background-color:var(--darkBlack);  /* your color */
+  color: white;
+}
+
+
+
+/* Body */
+.custom-drawer .offcanvas-body {
+  background-color:var(--darkBlack);
+}
+
+/* Links */
+.custom-drawer .nav-link {
+  color: #ddd;
+}
+
+.custom-drawer .nav-link:hover {
+  color: #fff;
+  background-color:var(--darkBlack);
+  border-radius: 5px;
+}
